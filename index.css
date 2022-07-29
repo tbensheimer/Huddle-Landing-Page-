@@ -68,6 +68,7 @@ body {
     border-radius: 25px;;
     margin-bottom: 75px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .register:hover {
