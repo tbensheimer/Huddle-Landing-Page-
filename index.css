@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 165px;
+    align-self: start;
+    margin: 35px; 
+    padding-bottom: 40px;
+}
+
+.screens {
+   width: 80%;
+   max-width: 500px;
+   margin-bottom: 80px;
+}
+
+.subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    width: 80%;
+    margin-bottom: 0px;
+}
+
+.description {
+    color: white;
+    width: 85%;
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.register {
+    border: none;
+    background: white;
+    font-family: "Poppins", sans-serif;
+    color:hsl(257, 40%, 49%);
+    width: 60%;
+    padding: 15px;
+    border-radius: 25px;;
+    margin-bottom: 75px;
+    font-weight: 600;
+}
+
+ion-icon {
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media (min-width: 1000px) {
+
+body {
+    background-image: url("images/bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "logo ."
+    "pic subsection"
+    "pic logos";
+    align-items: center;
+    justify-items: center;
+    grid-gap: 90px;
+    padding-left: 160px;
+}
+
+.logo {
+    width: 210px;
+    grid-area: logo;
+    justify-self: start;
+    margin-left: -20px;
+    padding-bottom: 0px;
+}
+
+.screens {
+    grid-area: pic;
+    width: 130%;
+    max-width: 1000px;
+}
+
+.subsection {
+    grid-area: subsection;
+    width: 80%;
+    height: 100%;
+    align-items: start;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.title {
+    text-align: left;
+    font-size: 40px;
+    width: 90%;
+    margin-top: -80px;
+}
+.description {
+    text-align: left;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.register {
+    width: 35%;
+}
+.media-logos {
+    grid-area: logos;
+    align-self: end;
+    justify-self: end;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+}
