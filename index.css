@@ -70,12 +70,22 @@ body {
     font-weight: 600;
 }
 
+.register:hover {
+    color: white;
+    background: hsl(300, 69%, 71%);
+}
+
 ion-icon {
     color: white;
     border: 1px solid white;
     border-radius: 50%;
     padding: 5px;
     margin: 5px;
+}
+
+ion-icon:hover {
+    color: hsl(300, 69%, 71%);
+    border-color:hsl(300, 69%, 71%);
 }
 
 @media (min-width: 1000px) {
